@@ -27,7 +27,7 @@ const AddCode = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://codebase-3.onrender.com/snippet/add",
+        "https://my-codebase.onrender.com/snippet/add",
         formData
       );
       toast.success(res.data.message);

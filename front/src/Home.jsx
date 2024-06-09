@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const fetchSnippets = async (lang) => {
   try {
     const res = await axios.get(
-      `http://localhost:4000/snippet/get?language=${lang}`
+      `https://my-codebase.onrender.com/snippet/get?language=${lang}`
     );
     if (res.data.length === 0) {
       toast.info("No snippets available for the selected language");

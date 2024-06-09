@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 const fetchSnippet = async (id) => {
   try {
     const res = await axios.get(
-      `https://codebase-3.onrender.com/snippet/get/${id}`
+      `https://my-codebase.onrender.com/snippet/get/${id}`
     );
     return res.data;
   } catch (err) {
@@ -44,7 +44,7 @@ const DetailPage = () => {
   const handleDelete = async(id) => {
       try {
     const res = await axios.delete(
-      `https://codebase-3.onrender.com/snippet/remove/${id}`
+      `https://my-codebase.onrender.com/snippet/remove/${id}`
     );
         toast.success(res.data.message);
         navigate('/')
